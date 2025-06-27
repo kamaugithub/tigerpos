@@ -34,17 +34,24 @@
     </nav>
   </header>
 
-  <!-- Login Form -->
-  <section class="login-section">
+<!-- Login Form -->
+<section class="login-section">
     <div class="login-card">
       <h2>Welcome to Tiger POS</h2>
-      <form>
+      <form action="dashboard.html" method="GET">
         <input type="email" placeholder="Email address" required />
         <input type="password" placeholder="Password" required />
         <button type="submit">Login</button>
       </form>
     </div>
   </section>
+  <script>
+    document.querySelector("form").addEventListener("submit", function (e) {
+      e.preventDefault(); // Stop the form from trying to submit
+      window.location.href = "dashboard.html"; // Redirect to dashboard
+    });
+  </script>
+  
 
 </body>
 </html>

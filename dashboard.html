@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiger POS Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <span class="footer-brand-black">TIGER</span>
+      <span class="footer-brand-red">POS</span>
+    </div>
+    <ul class="sidebar-links">
+      <li>POS</li>
+      <li>Search</li>
+      <li>Suppliers</li>
+      <li>Customers</li>
+      <li>Categories</li>
+      <li>Products</li>
+      <li>Stocking</li>
+      <li>Today's Summary</li>
+      <li>Debts</li>
+      <li>Reports</li>
+      <li>Units</li>
+      <li>Record Issues</li>
+    </ul>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="dashboard-content">
+    <header class="dashboard-header">
+      <div>Welcome, ramon</div>
+      <div>Branch: demo-branch-ramon | Date: 2025-06-27 | User: ramon</div>
+    </header>
+
+    <section class="pos-form">
+      <input type="text" placeholder="Select Customer..." />
+      <input type="text" placeholder="Search product using SKU..." />
+
+      <table class="pos-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Qty</th>
+            <th>Unit</th>
+            <th>Price</th>
+            <th>Total</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Product rows will be dynamically added here -->
+        </tbody>
+      </table>
+
+      <div class="checkout">
+        <div>
+          <label for="payment-method">Payment Method:</label>
+          <select id="payment-method">
+            <option>Cash</option>
+          </select>
+        </div>
+      
+        <div>
+          <label for="amount-paid">Amount Paid:</label>
+          <input type="number" id="amount-paid" value="0" />
+        </div>
+      
+        <div>
+          <label for="balance">Balance:</label>
+          <input type="text" id="balance" value="0" disabled />
+        </div>
+      
+        <button class="complete-btn">Complete Sale</button>
+        <p class="total">Total: Ksh 0.00</p>
+      </div>
+      
+    </section>
+  </main>
+
+</body>
+</html>

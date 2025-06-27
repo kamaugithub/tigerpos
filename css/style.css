@@ -707,5 +707,85 @@ html {
 .login-card button:hover {
   background-color: #e68900;
 }
+.sidebar {
+  background-color: #dd4315;
+  color: #fff;
+  width: 230px;
+  height: 100vh;
+  padding: 1.5rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar-brand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.sidebar-links li {
+  list-style: none;
+  margin: 0.8rem 0;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dashboard-content {
+  margin-left: 230px;
+  padding: 2rem;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.pos-form input,
+.pos-form select {
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+.pos-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.pos-table th,
+.pos-table td {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.checkout {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+  max-width: 500px;
+}
+
+.complete-btn {
+  background-color: #dd4315;
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
 
   
